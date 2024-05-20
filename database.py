@@ -43,7 +43,7 @@ class Database:
         :return: List of members
         """
         self.cursor.execute("SELECT * FROM members")
-        return self.cursor.fetchall
+        return self.cursor.fetchall()
 
 
     def update_member(self, member_id, name, last_name, age, city, price, membership_duration):
